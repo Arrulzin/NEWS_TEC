@@ -1,0 +1,146 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*text-transform: capitalize;*/
+}
+
+/* CABEÇARIO DO SITE */
+header {
+    /*background-color: #252B37;*/
+    background-color: #151D28;
+    /*color: #fff;*/
+    color: #E8E1D6;
+    padding: 1%;
+    text-align: center;
+}
+
+header img {
+    width: 10%;
+}
+
+header h1 {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -2px;
+}
+
+header.visible {
+    top: 0;
+}
+
+/* DECORAÇÃO HOME */
+
+.HOME,
+.MATERIAS,
+.SOBRE,
+.CONTATO {
+    text-decoration: none;
+    position: relative;
+}
+
+.HOME::after,
+.MATERIAS::after,
+.SOBRE::after,
+.CONTATO::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    bottom: 0;
+    left: 0;
+    background-color: #FFDE59; /* Cor do sublinhado */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.1s ease-in-out;
+}
+
+.HOME:hover::after,
+.MATERIAS:hover::after,
+.SOBRE:hover::after,
+.CONTATO:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+nav a:hover {
+    color: var(red);
+ 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li a {
+    color: #E8E1D6;
+    text-decoration: none;
+}
+
+/* NAVEGAÇÃO LATERAL */
+aside {
+    border: 1px solid #DDDBF1;
+    border-radius: 2.7%;
+    width: 20%; /* Alterado para porcentagem */
+    margin: 1%; /* Margem entre os produtos */
+    padding-left: 1%; /* Espaçamento interno dos produtos */
+    padding-bottom: 1%;
+    padding-top: 1%;  
+    float: right;  
+}
+
+aside a {
+    text-decoration: none;
+}
+
+/* CORPO DA MATÉRIA */
+
+#TITULO {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.MATERIA,
+.TITULO {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 60%;
+    font-size: 120%;
+}
+
+.MATERIA img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 1%;
+    width: 100%;
+}
+
+.MATERIA p {
+    margin: 0;
+}
+
+.MATERIA h4 {
+    text-align: center;
+}
+
+/* RODAPÉ DO SITE */
+.RODAPÉ{
+    margin: 1%;
+    text-align: center;
+}
+footer hr {
+    border: none;
+    height: 1px; 
+    background-color: #CFCFCF;
+}
+

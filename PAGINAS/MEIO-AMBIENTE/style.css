@@ -1,0 +1,218 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* CABEÇALHO DO SITE */
+header {
+    background-color: #32CD32;
+    color: #161F27;
+    padding: 1%;
+    text-align: center;
+    height: 80%;
+}
+
+header img {
+    width: 10%;
+}
+
+header h1 {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -2px;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header ul {
+    width: 28%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header nav {
+    width: 100%;
+}
+
+/* DECORAÇÃO HOME */
+.HOME, .MATERIAS, .SOBRE, .CONTATO {
+    text-decoration: none;
+    position: relative;
+}
+
+.HOME::after, .MATERIAS::after, .SOBRE::after, .CONTATO::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    bottom: 0;
+    left: 0;
+    background-color: #161F27;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.1s ease-in-out;
+}
+
+.HOME:hover::after, .MATERIAS:hover::after, .SOBRE:hover::after, .CONTATO:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li a {
+    color: #161F27;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #131313;
+}
+
+/* NAVEGAÇÃO LATERAL */
+aside {
+    border: 1px solid #DDDBF1;
+    border-radius: 2.7%;
+    width: 20%;
+    margin: 1% 0;
+    padding: 2%;
+    float: right;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    text-decoration: none;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside img {
+    width: 80%;
+    align-items: center;
+    padding-bottom: 5%;
+    display: block;
+}
+
+/* CORPO DA MATÉRIA */
+main {
+    border-top: 5%;
+    margin-left: 5%;
+    padding: 2%;
+}
+
+/* GALERIA HORIZONTAL */
+.grid-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    margin-right: 60px; /* Distância da barra lateral direita */
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 250px; /* Largura fixa para cada item */
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+p {
+    color: #131313;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* CORES POR TEMA */
+.grid-item.esporte:hover {
+    background-color: #1E90FF; /* Azul para Esporte */
+}
+
+.grid-item.cultura:hover {
+    background-color: #FFA500; /* Laranja para Cultura */
+}
+
+.grid-item.gastronomia:hover {
+    background-color: #FFD700; /* Amarelo para Gastronomia */
+}
+
+.grid-item.meio-ambiente:hover {
+    background-color: #32CD32; /* Verde para Meio Ambiente */
+}
+
+.grid-item.novidades:hover {
+    background-color: #8A2BE2; /* Roxo para Novidades */
+}
+
+.grid-item.saude:hover {
+    background-color: #FF4500; /* Vermelho para Saúde */
+}
+
+
+/* ASIDE DESCRIÇÃO DA EMPRESA */
+.company-info {
+    position: fixed;
+    bottom: -20px; /* Ajustado para posicionar o aside 20px acima da parte inferior da tela */
+    right: -20px; /* Distância de 20px da lateral direita da tela */
+    width: 20%;
+    padding: 2%;
+    background-color: #161F27;
+    color: #E8E1D6;
+    border-radius: 10px 0 0 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.company-info p {
+    color: rgb(165, 165, 165);
+}
+
+/* Estilo do rodapé */
+footer {
+    color: #161F27;
+    text-align: center;
+    padding: 2%;
+    width: 95.9%;
+    padding-bottom: 0;
+}
