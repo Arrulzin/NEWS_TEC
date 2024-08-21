@@ -211,7 +211,6 @@ p {
 /* Materias */
 .materia {
     width: 40%;
-
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -219,6 +218,7 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.2s ease-in-out;
+    align-items: center;
 }
 
 .materia:hover {

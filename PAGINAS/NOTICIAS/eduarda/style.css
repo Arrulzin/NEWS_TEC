@@ -9,7 +9,7 @@ body {
 /* CABEÇARIO DO SITE */
 header {
     /*background-color: #252B37;*/
-    background-color: #151D28;
+    background-color: #8A2BE2;
     /*color: #fff;*/
     color: #E8E1D6;
     padding: 1%;
@@ -50,7 +50,7 @@ header.visible {
     height: 1%;
     bottom: 0;
     left: 0;
-    background-color: #FFDE59; /* Cor do sublinhado */
+    background-color: white; /* Cor do sublinhado */
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.1s ease-in-out;
@@ -127,6 +127,11 @@ aside a {
 
 .MATERIA p {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /* RODAPÉ DO SITE */

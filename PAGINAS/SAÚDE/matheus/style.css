@@ -118,19 +118,16 @@ aside a {
 }
 
 .MATERIA img {
-    display: block;
     margin: 0 auto;
     border-radius: 1%;
-    width: 100%;
+    width: 50%;
 }
 
 .MATERIA p {
     margin: 0;
 }
 
-img {
-    width: 40%;
-}
+
 
 a {
     text-decoration: none;

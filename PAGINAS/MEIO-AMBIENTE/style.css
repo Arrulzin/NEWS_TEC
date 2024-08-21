@@ -189,6 +189,56 @@ p {
     background-color: #FF4500; /* Vermelho para Saúde */
 }
 
+/* Materias */
+.materia {
+    width: 40%;
+
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.materia:hover {
+    transform: scale(1.05);
+}
+
+.materia img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.materia img:hover {
+    opacity: 0.8;
+}
+
+.materia h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.materia h4 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.materia h4 a:hover {
+    color: #007BFF;
+}
+
+.materia h6 {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
 
 /* ASIDE DESCRIÇÃO DA EMPRESA */
 .company-info {

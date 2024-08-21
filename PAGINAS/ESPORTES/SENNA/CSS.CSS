@@ -9,9 +9,9 @@ body {
 /* CABEÇARIO DO SITE */
 header {
     /*background-color: #252B37;*/
-    background-color: #FFA500;
+    background-color: #1E90FF;
     /*color: #fff;*/
-    color: #161F27;
+    color: #131313;
     padding: 1%;
     text-align: center;
 }
@@ -50,7 +50,7 @@ header.visible {
     height: 1%;
     bottom: 0;
     left: 0;
-    background-color: #161F27; /* Cor do sublinhado */
+    background-color: #131313; /* Cor do sublinhado */
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.1s ease-in-out;
@@ -82,13 +82,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #161F27;
+    color: #131313;
     text-decoration: none;
 }
 
 /* NAVEGAÇÃO LATERAL */
 aside {
-    border: 1px solid #DDDBF1;
+    border: 1px solid #131313;
     border-radius: 2.7%;
     width: 20%; /* Alterado para porcentagem */
     margin: 1%; /* Margem entre os produtos */
@@ -129,30 +129,15 @@ aside a {
     margin: 0;
 }
 
-.audio-customizado {
-    display: block;
-    margin: 20px auto; /* Centraliza o áudio na página */
-    width: 80%; /* Define a largura do elemento de áudio */
-    max-width: 600px; /* Limita a largura máxima para 600px */
-    border: 2px solid #ccc; /* Adiciona uma borda leve para destaque */
-    border-radius: 10px; /* Arredonda os cantos do áudio */
-    background-color: #f9f9f9; /* Define uma cor de fundo suave */
+.MATERIA h4 {
+    text-align: center;
 }
 
 a {
     text-decoration: none;
-    color: #161F27;
+    color: #131313;
 }
 
-.audio-container {
-    text-align: center;
-    
-}
-
-audio {
-    display: inline-block;
-    width: 300px;
-}
 /* RODAPÉ DO SITE */
 .RODAPÉ{
     margin: 1%;
@@ -161,6 +146,9 @@ audio {
 footer hr {
     border: none;
     height: 1px; 
-    background-color: #CFCFCF;
+    background-color: #131313;
+}
+.MATERIA h3 {
+    text-align: center;
 }
 

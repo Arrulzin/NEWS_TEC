@@ -8,13 +8,13 @@ body {
 
 /* CABEÇARIO DO SITE */
 header {
-    /*background-color: #252B37;*/
-    background-color: #151D28;
-    /*color: #fff;*/
-    color: #E8E1D6;
+    background-color: #FFD700;
+    color: #161F27;
     padding: 1%;
     text-align: center;
+    height: 80%;
 }
+
 
 header img {
     width: 10%;
@@ -50,7 +50,7 @@ header.visible {
     height: 1%;
     bottom: 0;
     left: 0;
-    background-color: #FFDE59; /* Cor do sublinhado */
+    background-color: #131313; /* Cor do sublinhado */
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.1s ease-in-out;
@@ -82,13 +82,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E8E1D6;
+    color: #131313;
     text-decoration: none;
 }
 
 /* NAVEGAÇÃO LATERAL */
 aside {
-    border: 1px solid #DDDBF1;
+    border: 1px solid #131313;
     border-radius: 2.7%;
     width: 20%; /* Alterado para porcentagem */
     margin: 1%; /* Margem entre os produtos */
@@ -119,14 +119,23 @@ aside a {
 }
 
 .MATERIA img {
-    display: block;
+    display: flex;
     margin: 0 auto;
     border-radius: 1%;
-    width: 100%;
+    width: 50%;
 }
 
 .MATERIA p {
     margin: 0;
+}
+
+.MATERIA h4 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #131313;
 }
 
 /* RODAPÉ DO SITE */
@@ -139,3 +148,4 @@ footer hr {
     height: 1px; 
     background-color: #CFCFCF;
 }
+
