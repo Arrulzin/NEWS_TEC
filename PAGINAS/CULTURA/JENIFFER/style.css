@@ -134,6 +134,16 @@ a {
     color: #131313;
 }
 
+.audio-container {
+    text-align: center;
+    
+}
+
+audio {
+    display: inline-block;
+    width: 300px;
+}
+
 /* RODAPÉ DO SITE */
 .RODAPÉ{
     margin: 1%;
