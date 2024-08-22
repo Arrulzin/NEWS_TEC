@@ -119,10 +119,9 @@ aside a {
 }
 
 .MATERIA img {
-    display: block;
     margin: 0 auto;
     border-radius: 1%;
-    width: 10%;
+    width: 80%;
 }
 
 .MATERIA p {
@@ -135,7 +134,7 @@ a {
 }
 
 img {
-    width: 10%;
+    width: 40%;
 }
 
 /* RODAPÉ DO SITE */
